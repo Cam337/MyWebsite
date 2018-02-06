@@ -1,0 +1,156 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 0;
+  background-color: #c4c4c4
+}
+
+/* Global */
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  background: #2B2839; /*#1A1922; #35424a;*/
+  color: #ffffff;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom:#e8491d 3px solid;
+}
+
+header a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+header li {
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+header #name{
+  float:left;
+}
+
+header #name h1 {
+  margin:0;
+}
+
+header nav {
+  float: right;
+  margin-top: 13px;
+}
+
+header .highlight, header .current a {
+  color: #e8491d;
+  font-weight: bold;
+}
+
+header a:hover{
+  color:#cccccc;
+  font-weight: bold;
+}
+
+/* Banner */
+.banner {
+  min-height: 400px;
+  background: url(../images/skyline_dark.jpg) no-repeat 0 -400px;
+  opacity: 0.8;
+  color: #ffffff;
+  text-align: center;
+}
+
+.banner h1{
+  margin-top: 40px;
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+
+.banner p{
+  font-size: 20px
+}
+
+/* dark background */
+.dark {
+  padding: 0;
+  color: #ffffff;
+  background: #2B2839;
+  text-align: center;
+}
+
+.dark h1 {
+  font-size: 40px;
+}
+
+/* image */
+
+.image img {
+  padding: 20px;
+  margin-top: 5px;
+  border-radius: 25px;
+}
+
+/* aboutMe */
+#aboutMe {
+  background: #2B2839;
+  color: #ffffff;
+  text-align: center;
+}
+
+#aboutMe .highlight {
+  color: #e8491d;
+}
+
+footer {
+  padding: 25px;
+}
+footer .icon-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+footer .icon-wrapper a:hover {
+  text-decoration: none;
+}
+footer .icon-wrapper a:focus {
+  text-decoration: none;
+}
+footer .icon-wrapper img {
+  margin: 0 5px;
+}
+footer .icon-wrapper img:hover {
+  cursor: pointer;
+}
+
+/* Media Queries */
+@media(max-width: 768px){
+  header #name,
+  header nav,
+  header nav li {
+    float:none;
+    text-align:center;
+    width:100%;
+  }
+
+  header{
+    padding-bottom:20px;
+  }
+
+  #banner h1{
+    margin-top:40px;
+  }
+
+}
